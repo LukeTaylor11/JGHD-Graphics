@@ -1,6 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background: #8c8c8c; }
+  background: #ffff; }
 
 section {
   margin: 0; }
@@ -14,22 +14,73 @@ section {
 .navbar {
   border: none; }
 
+.navbar-default .navbar-nav > li > a:hover {
+  color: white; }
+
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
   color: white; }
 
-nav {
-  padding: 0 20px; }
+nav, h1, h2, h3, h4 {
+  padding: 0 !important;
+  margin: 0 !important; }
 
 #intro-section {
   min-height: 700px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/intro-2.jpg");
-  background-size: cover; }
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/intro-2.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  #intro-section #intro-text {
+    margin-top: 12%;
+    color: white; }
+    #intro-section #intro-text h1 {
+      font-size: 7em;
+      text-align: center; }
+    #intro-section #intro-text h3 {
+      text-align: center;
+      font-size: 2em; }
 
 #main-section #about {
-  background-image: url("/images/about.jpg");
-  background-size: contain;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+#main-section #portfolio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/portfolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+#main-section #latest-updates {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/latest-updates.jpg");
+  background-size: cover;
   background-repeat: no-repeat; }
 #main-section div {
-  min-height: 600px; }
+  height: 400px;
+  margin: 0;
+  padding: 0; }
+#main-section .content {
+  width: 100%;
+  padding: 15% 25%; }
+  #main-section .content h3 {
+    font-size: 5em;
+    text-transform: lowercase;
+    color: white;
+    font-weight: bolder; }
+    #main-section .content h3 span {
+      margin-left: 25%; }
+  #main-section .content button {
+    width: 200px;
+    padding: 5% 0;
+    border-radius: 3px;
+    display: block;
+    background: #333;
+    border: 1px white solid;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+    margin: 10% auto 0 auto; }
+
+footer {
+  padding: 10px 0 5px 0;
+  text-align: center; }
+  footer i {
+    font-size: 2em !important; }
 
 /*# sourceMappingURL=styles.css.map */

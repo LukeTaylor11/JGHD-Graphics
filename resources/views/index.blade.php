@@ -8,12 +8,13 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel = "stylesheet" href = "css/styles.css" type = "text/css">
-
+        <link rel = "stylesheet" href = "css/font-awesome.min.css" type = "text/css">
         <title>JGHD Graphics</title>
 
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
 
 
     </head>
@@ -35,25 +36,50 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/">Home &nbsp; <i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="/portfolio">Portfolio &nbsp; <i class="fa fa-folder-open" aria-hidden="true"></i></a></li>
+            <li><a href="/contact">Latest Updates &nbsp; <i class="fa fa-exclamation-circle" aria-hidden="true"></i></a></li>
+            <li><a href="/contact">Contact &nbsp; <i class="fa fa-phone" aria-hidden="true"></i></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
      </nav>
+     <div id = "intro-text">
+       <h1>Joshua Wilkinson</h1>
+       <h3>Proffesional Graphic Designer
+     </div>
     <!-- Intro Section -->
  </section>
  <section id = "main-section">
    <div class = "row">
      <div class = "col-md-4" id = "about">
+       <div class = "content">
+         <h3>About</br><span>Me</span></h3>
+         <a href = "/about-me"><button>more</button></a>
+       </div>
      </div>
      <div class = "col-md-4" id = "portfolio">
+      <div class = "content">
+        <h3>View</br><span>Portfolio</span></h3>
+         <a href = "/portfolio"><button>more</button></a>
+      </div>
      </div>
      <div class = "col-md-4" id = "latest-updates">
+       <div class = "content">
+         <h3>Latest</br><span>Updates</span></h3>
+          <a href = "/latest-updates"><button>more</button></a>
+       </div>
      </div>
    </div>
  </section>
+ <footer>
+   <div class = "social-media">
+     <i class="fa fa-facebook-square" aria-hidden="true"></i>
+     <i class="fa fa-instagram" aria-hidden="true"></i>
+     <i class="fa fa-twitter-square" aria-hidden="true"></i>
+   </div>
+   &copy; JGHD Graphics 2017
+ </footer>
   </body>
 
     <!-- JS-->
