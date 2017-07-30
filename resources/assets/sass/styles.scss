@@ -15,6 +15,10 @@ section{
 	margin: 0;
 }
 
+a:hover, a:active, a:visited{
+	text-decoration: none;
+	color: white;
+}
 
 
 
@@ -28,11 +32,16 @@ section{
 
 }
 
-.navbar-default .navbar-nav>li>a:hover{
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:visited, .navbar-default .navbar-nav>li>a:active{
 	color: white;
+	text-decoration: none;
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand{
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand:hover{
 	color: white;
 }
 
@@ -45,7 +54,9 @@ nav, h1, h2, h3, h4{
 // Intro Section
 
 #intro-section{
-	min-height: 700px;
+	// min-height: 700px;
+	min-height: 100vh;
+	position: relative;
 	background:
     /* top, transparent black, faked with gradient */
     linear-gradient(
@@ -59,7 +70,8 @@ nav, h1, h2, h3, h4{
 		background-attachment: fixed;
 
 		#intro-text{
-			margin-top: 12%;
+			// margin-top: 12%;
+			margin-top: 15%;
 			color: white;
 			h1{
 				font-size: 7em;
@@ -70,6 +82,23 @@ nav, h1, h2, h3, h4{
 				text-align: center;
 				font-size: 2em;
 			}
+
+		}
+
+
+		.arrow-down{
+			position:absolute;
+			bottom: 10%;
+			width: 100%;
+			i{
+				margin: 3% auto 0 auto;
+				font-size: 6em;
+				display: block;
+				color: white;
+				width: 200px;
+				text-align: center;
+			}
+
 		}
 
 }
@@ -116,7 +145,7 @@ nav, h1, h2, h3, h4{
 	}
 
 	div{
-		height: 400px;
+
 		margin: 0;
 		padding: 0;
 	}
@@ -131,7 +160,7 @@ nav, h1, h2, h3, h4{
 			color: white;
 			font-weight: bolder;
 			span{
-				margin-left: 25%;
+				margin-left: 0.5em;
 			}
 		}
 
@@ -152,10 +181,38 @@ nav, h1, h2, h3, h4{
 
 
 footer{
-	padding: 10px 0 5px 0;
+	padding: 10px 0 6px 0;
 	text-align: center;
+	display: block;
 
 	i{
 		font-size: 2em !important;
+	}
+
+	.social-media{
+		display: block;
+		margin: 0 auto;
+		height: 30%;
+		width: 50vw;
+
+	}
+}
+
+// pages
+
+#main-content{
+	background: #999999;
+	padding: 3% 3% !important;
+	text-align: center;
+	min-height: 400px;
+  font-family: 'Arvo', serif;
+
+	h1{
+		font-size: 10em;
+	}
+
+	h1{
+		font-size: 4em;
+		color: white;
 	}
 }

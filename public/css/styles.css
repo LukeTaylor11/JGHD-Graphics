@@ -8,16 +8,24 @@ section {
 .row {
   margin: 0; }
 
+a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: white; }
+
 .navbar-default {
   background: none; }
 
 .navbar {
   border: none; }
 
-.navbar-default .navbar-nav > li > a:hover {
-  color: white; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:visited, .navbar-default .navbar-nav > li > a:active {
+  color: white;
+  text-decoration: none; }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+  color: white; }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand:hover {
   color: white; }
 
 nav, h1, h2, h3, h4 {
@@ -25,12 +33,13 @@ nav, h1, h2, h3, h4 {
   margin: 0 !important; }
 
 #intro-section {
-  min-height: 700px;
+  min-height: 100vh;
+  position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/intro-2.jpg");
   background-size: cover;
   background-attachment: fixed; }
   #intro-section #intro-text {
-    margin-top: 12%;
+    margin-top: 15%;
     color: white; }
     #intro-section #intro-text h1 {
       font-size: 7em;
@@ -38,6 +47,17 @@ nav, h1, h2, h3, h4 {
     #intro-section #intro-text h3 {
       text-align: center;
       font-size: 2em; }
+  #intro-section .arrow-down {
+    position: absolute;
+    bottom: 10%;
+    width: 100%; }
+    #intro-section .arrow-down i {
+      margin: 3% auto 0 auto;
+      font-size: 6em;
+      display: block;
+      color: white;
+      width: 200px;
+      text-align: center; }
 
 #main-section #about {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/about.jpg");
@@ -52,7 +72,6 @@ nav, h1, h2, h3, h4 {
   background-size: cover;
   background-repeat: no-repeat; }
 #main-section div {
-  height: 400px;
   margin: 0;
   padding: 0; }
 #main-section .content {
@@ -64,7 +83,7 @@ nav, h1, h2, h3, h4 {
     color: white;
     font-weight: bolder; }
     #main-section .content h3 span {
-      margin-left: 25%; }
+      margin-left: 0.5em; }
   #main-section .content button {
     width: 200px;
     padding: 5% 0;
@@ -78,9 +97,27 @@ nav, h1, h2, h3, h4 {
     margin: 10% auto 0 auto; }
 
 footer {
-  padding: 10px 0 5px 0;
-  text-align: center; }
+  padding: 10px 0 6px 0;
+  text-align: center;
+  display: block; }
   footer i {
     font-size: 2em !important; }
+  footer .social-media {
+    display: block;
+    margin: 0 auto;
+    height: 30%;
+    width: 50vw; }
+
+#main-content {
+  background: #999999;
+  padding: 3% 3% !important;
+  text-align: center;
+  min-height: 400px;
+  font-family: 'Arvo', serif; }
+  #main-content h1 {
+    font-size: 10em; }
+  #main-content h1 {
+    font-size: 4em;
+    color: white; }
 
 /*# sourceMappingURL=styles.css.map */
