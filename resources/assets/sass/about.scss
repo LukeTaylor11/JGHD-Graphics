@@ -1,0 +1,101 @@
+
+
+#intro-section{
+	// min-height: 700px;
+	min-height: 60vh;
+	position: relative;
+  display: flex;
+	background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    /* bottom, image */
+    url("/images/intro-2.jpg");
+
+		background-size: cover;
+    background-repeat: no-repeat;
+		background-attachment: fixed;
+
+		#intro-text{
+			// margin-top: 12%;
+      height: 100%;
+      margin: auto;
+			color: white;
+
+			h1{
+				font-size: 4em;
+        flex: 1;
+        text-align: center;
+        margin: auto;
+			}
+
+			h3{
+        font-size: 1em;
+        text-align: center;
+        margin: auto;
+			}
+
+		}
+
+}
+
+#about-section{
+  padding: 5% 20%;
+  font-size: 1.5em;
+
+  #about-images{
+    display: flex;
+    margin-bottom: 4%;
+    justify-content: space-between;
+
+    .image{
+      background: #999;
+      width: 250px;
+      margin: auto;
+      height: 180px;
+      border-radius: 3px;
+      display: flex;
+
+      .text{
+        margin: auto;
+        color: white;
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+#view-portfolio{
+  height: 30vh;
+  background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    /* bottom, image */
+    url("/images/view-portfolio2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+
+  a{
+    padding: 1% 2%;
+    border-radius: 3px;
+    background: #333;
+    margin: auto;
+
+    div{
+      h2{
+        font-size: 3em;
+        color: white;
+        text-align: center;
+      }
+  }
+
+  }
+
+}
