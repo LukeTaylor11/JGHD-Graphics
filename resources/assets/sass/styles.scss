@@ -1,5 +1,5 @@
 // Body & Global
-
+$phone: 500px;
 
 // Intro Section
 
@@ -31,6 +31,14 @@
 			h3{
 				text-align: center;
 				font-size: 2em;
+			}
+
+			@media screen and (max-width: $phone){
+						margin-top: 30%;
+						h1{
+							font-size: 6em;
+						}
+
 			}
 
 		}
@@ -104,6 +112,7 @@
 		width: 100%;
 		padding: 15% 25%;
 
+
 		h3{
 			font-size: 5em;
 			text-transform: lowercase;
@@ -112,6 +121,13 @@
 			span{
 				margin-left: 0.5em;
 			}
+			@media screen and (max-width: $phone){
+				font-size: 4em;
+					span{
+						margin-left: 0;
+					}
+			}
+
 		}
 
 		button{

@@ -12,6 +12,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background: #fff; }
 
+@media screen and (max-width: 500px) {
+  .navbar-collapse {
+    background: #202833; } }
+
 .navbar {
   position: absolute;
   top: 0;

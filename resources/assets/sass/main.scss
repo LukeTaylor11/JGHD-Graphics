@@ -1,4 +1,7 @@
 //global
+
+$blue: rgb(32, 40, 51);
+
 section{
 	margin: 0;
 }
@@ -17,14 +20,23 @@ body{
 	background: #fff;
 }
 
+$phone: 500px;
+
 
 // Nav Bar
 
+.navbar-collapse{
+	@media screen and (max-width: $phone){
+		background: rgb(32, 40, 51);
+	}
+}
 .navbar{
   position: absolute;
   top: 0;
   left:0;
   width: 100%;
+
+
 }
 .navbar-default{
 	background: none;

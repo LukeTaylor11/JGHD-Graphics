@@ -22,14 +22,21 @@
 
 #about-section {
   padding: 5% 20%;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  text-align: justify; }
+  @media screen and (max-width: 500px) {
+    #about-section {
+      padding: 4% 4%; } }
   #about-section #about-images {
     display: flex;
     margin-bottom: 4%;
     justify-content: space-between; }
+    @media screen and (max-width: 1000px) {
+      #about-section #about-images {
+        display: none; } }
     #about-section #about-images .image {
       background: #999;
-      width: 250px;
+      width: 210px;
       margin: auto;
       height: 180px;
       border-radius: 3px;
